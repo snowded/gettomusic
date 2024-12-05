@@ -1,0 +1,45 @@
+/** @format */
+
+@media only screen and (max-width: 850px) {
+  .lander {
+    padding: 6rem 2rem;
+    height: 15rem;
+  }
+
+  header div:nth-of-type(3) {
+    display: none;
+  }
+
+  header div {
+    display: flex;
+    gap: 6px;
+    font-size: 18px;
+  }
+
+  .lander img {
+    display: none;
+  }
+
+  #creations,
+  #services {
+    padding: 2rem 1rem;
+  }
+
+  .project div p {
+    font-size: 16px;
+  }
+
+  .project img {
+    height: 100px;
+    width: 100px;
+    border-radius: 16px;
+  }
+
+  .credit h3 a {
+    padding-top: 20px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+}

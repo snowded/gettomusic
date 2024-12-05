@@ -1,0 +1,77 @@
+{
+  "name": "fuego",
+  "license": "MIT",
+  "version": "6.0.0",
+  "author": "Immortal",
+  "main": "launcher.js",
+  "description": "Imagine a music bot",
+  "engines": {
+    "node": ">=18.x"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "josh-data/*"
+    ]
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@main": "./main",
+    "@db": "./database",
+    "@utils": "./utils",
+    "@events": "./events",
+    "@assets": "./assets",
+    "@plugins": "./plugins",
+    "@commands": "./commands",
+    "@functions": "./functions",
+    "@gen": "./functions/generators",
+    "@presets": "./functions/presets",
+    "@loaders": "./functions/loaders",
+    "@reloaders": "./functions/reloaders",
+    "@formatters": "./functions/formatters"
+  },
+  "dependencies": {
+    "@execaman/lyricist": "^2.0.2",
+    "@joshdb/core": "^1.2.7",
+    "@joshdb/json": "^1.0.5",
+    "@sapphire/ratelimits": "^2.4.7",
+    "archiver": "^6.0.1",
+    "canvas": "^2.9.0",
+    "chalk": "4.1.2",
+    "cheerio": "^1.0.0-rc.12",
+    "discord-hybrid-sharding": "^2.1.4",
+    "discord.js": "^14.13.0",
+    "dokdo": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-status-monitor": "^1.3.4",
+    "googleapis": "^143.0.0",
+    "got": "^11.8.0",
+    "jimp": "^0.22.10",
+    "js-yaml": "^4.1.0",
+    "kazagumo": "^3.0.0",
+    "kazagumo-apple": "^2.0.1",
+    "kazagumo-deezer": "^2.0.2",
+    "kazagumo-filter": "^2.0.0",
+    "kazagumo-spotify": "^2.0.1",
+    "lodash": "^4.17.21",
+    "log-update": "^6.0.0",
+    "module-alias": "^2.2.3",
+    "moment": "^2.29.4",
+    "moment-duration-format": "^2.3.2",
+    "ms": "^2.1.3",
+    "node-schedule": "^2.1.1",
+    "nodeactyl": "^3.3.0",
+    "os-utils": "^0.0.14",
+    "path": "^0.12.7",
+    "quickchart-js": "^3.1.3",
+    "shoukaku": "^4.0.1",
+    "voucher-code-generator": "^1.3.0"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "start": "npm i && node launcher.js"
+  }
+}
